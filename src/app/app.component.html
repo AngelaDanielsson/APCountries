@@ -67,19 +67,23 @@
 <p>git branch -m master</p>
 <p>git push -f origin master</p>
 </div>
+
 <div>
-  <p>Branches = En kopia av orginalet.
-    Man jobbar i branch för att slippa förstöra orginalet med kod som kanske inte är funktionell.
-    cmd: git branch NAMN Exempel git branch nyttbranchnamn
-    Nu måste man byta, då master står som aktiv.
-    git checkout nyttbranchnamn Då cheackar man ut den man arbetar i och checkar in i den man skriver.
-    Arbeta i den nya. När denna är fullt klar och fungerar. Spara den ctrl S.
-    Pusha den till git, så kan alla se den.
-    När alla är eniga, checkar man ut: git checkout master
-    För att slå samman dessa: git merge nyttbranchnamn.
-    Kör en git add .
-    Sedan en git commit -m “Sammanslagning av nyttbrachnamn och master”
-    Kör sedan en push igen.
-    </p>
+  <H1>Branches</H1>
+  Branches = En kopia av orginalet.
+  Man jobbar i branch för att slippa förstöra orginalet med kod som kanske inte är funktionell.
+  <ol>
+      <li>cmd: git branch NAMN Exempel git branch nyttbranchnamn</li>
+<p>Nu måste man byta, då master står som aktiv.</p>
+  <li>git checkout nyttbranchnamn Då cheackar man ut den man arbetar i och checkar in i den man skriver.</li>
+  <li>Arbeta i den nya. När denna är fullt klar och fungerar. Spara den ctrl S.</li>
+  <li>Pusha den till git, så kan alla se den.</li>
+  <li>När alla är eniga, checkar man ut: git checkout master</li>
+  <li>För att slå samman dessa: git merge nyttbranchnamn.</li>
+  <li>Kör en git add .</li>
+  <li>Sedan en git commit -m “Sammanslagning av nyttbrachnamn och master”</li>
+  <li>Kör sedan en push igen.</li>
+  </ol>
+
 </div>
 
