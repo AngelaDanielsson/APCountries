@@ -11,8 +11,6 @@ import {Component} from '@angular/core'
 
 //Export så vi kan använda den fritt.
 //Skapar en klass som senare används för att anropas, och göra datan använbar.
-
-
 export class WorldComponent {
     Name : string = 'Sweden';
     Population : number = 8861400;
