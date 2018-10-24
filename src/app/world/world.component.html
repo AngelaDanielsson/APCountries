@@ -1,0 +1,54 @@
+
+
+<button (click) = "displayDetails()">
+    {{btnTxt}}
+</button>
+<!--Detta är event binding. Reglerna finns i world.comp.ts-->
+<br /><br />
+
+<!--Så här kan vi hämta flaggorna Petter, får ju använda storleksregler då denna hämtas från world.comp.ts...-->
+            <!--<img [src]="imagePath"/>-->
+<!--Men vi skall ju använda bindning.-->
+
+
+<!--Grunden för table-->
+<!--<table [class]="classtouse">-->
+<!--Denna hämas ifrån world.comp.ts-->
+
+
+   <!-- <tr>
+    Överskrift skapad utifrån attribut-bining, från world.comp.ts
+        <td [attr.colspan]= "colspan">
+            World Details
+        </td>
+    </tr>-->
+<table *ngIf="showDetails">
+    <tr>
+        <td>Name</td>
+        <td [innerHtml]="Name"></td>
+        <!--Propperty binding. Fungerar på samma sätt som <td>Name</td>,
+         utom att i denna går ej beräkningar 100*5exempel eller andra uttryck.
+        obs hämtas ifrån world.comp.ts-->
+    </tr>
+    <tr>
+         <td>Population</td>
+        <td [innerHtml]="Population"></td>
+    </tr>
+    <tr>
+         <td>LifeExpectancy</td>
+         <td>{{LifeExpectancy}}</td>
+    </tr>
+    <tr>
+        <td>GovernmentForm</td>
+        <td>{{GovernmentForm}}</td>
+    </tr>
+    <tr>
+        <td>HeadOfState</td>
+        <td>{{HeadOfState}}</td>
+    </tr>
+    <tr>
+        <td>Annat</td>
+        <td>{{worldCName()}}</td>
+    </tr>
+</table>
+<!--{{Hämtar informationen ifrån world comp.ts }}-->

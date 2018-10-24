@@ -1,0 +1,17 @@
+table{
+    color: black;
+}
+
+.class1{
+    color:blue;
+    background-color: yellow;
+    font-weight: bold;
+}
+.class2{
+    color:red;
+    background-color: lime;
+    text-decoration: underline;
+}
+.class3{
+    font-family: comic sans ms;
+}
